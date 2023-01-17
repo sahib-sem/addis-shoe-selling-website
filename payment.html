@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="payment page of my shoe selling website">
+    <title>Payment</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="font-awesome/css/all.css">
+
+    <link rel="icon" href="images/logo/logo.jpeg">
+</head>
+<body>
+    <!-- header section with a nav bar and search bar  -->
+    <header class="header">
+  
+        <nav class="header__navigation">
+            <div class="logo-container">
+                <img src="images/logo/logo.jpeg" class="logo-container__image" alt="logo of the company">
+             </div>
+            <ul class="navigation-bar" id="nav-bar">
+                <li class="navigation-bar__item"><a href="index.html" class="navigation-bar__item__link">Home</a></li>
+                <li class="navigation-bar__item"><a href="shop.html" class="navigation-bar__item__link">Shop</a></li>
+                <li class="navigation-bar__item"><a href="about.html" class="navigation-bar__item__link">About</a></li>
+                <li class="navigation-bar__item"><a href="contact.html" class="navigation-bar__item__link">Contact</a></li>
+                <li class="navigation-bar__item cart-icon"><a href="cart.html" aria-label="open cart page" class="navigation-bar__item__link"><i class="fa-solid fa-cart-shopping"></i></a></li>
+                <li class="navigation-bar__item"><a href="login.html" class="navigation-bar__item__link"><button class="btn" id="login-btn">login</button></a></li>
+                <a href="#" class="close" id="close" aria-label="close sidebar menu"><i class="fa-solid fa-xmark"></i></a>
+            
+            </ul>
+        
+            <div class="mobile">
+                <button class="mobile__search-button" id="search-button-mobile" aria-label="search button"><i class="mobile__search-button__icon fa-solid fa-magnifying-glass"></i> </button>
+               
+                
+                <a href="cart.html" aria-label="open cartpage"><i class="mobile__cart fa-solid fa-cart-shopping"></i></a>
+                <i id="bar" class="mobile__hamburger-menu fas fa-outdent"></i>
+            </div>
+        </nav>
+        <div class="search-bar" id="search-bar">
+            <form class="search-bar-form">
+                <label for="search"><span class="visually-hidden">Label for the input</span></label>
+                <input type="text" placeholder="search anything..." id="search"  class="search-bar-form__input">
+                
+                <button id="search-btn" type="submit" aria-label="search button" class="search-bar-form__button"><i class="search-bar-form__button__icon fa-solid fa-magnifying-glass"></i></button>
+            </form>
+        </div>
+    </header>
+
+    <section class="payment section-padding">
+        <div class="payment-method">
+            <h3 class="payment-method__heading3">Choose your payment method</h3>
+            <form class="payment-method__form" id="form">
+                <div class="telebirr">
+                   
+                
+                    <div class="payment-input">
+                        
+                            <label for="phone-num"><span class="visually-hidden">Label for the input</span></label>
+                            <input type="radio" id="telebirr" name="payment-method" value="telebirr" class="telebirr__input">
+                            <label for="telebirr">Telebirr</label>
+                            <input type="tel" name="phone-num" id="phone-number" placeholder="your phone number" class="telebirr__input">
+                            <div class="error"></div>
+                    
+                    </div>
+                    
+                   
+                    <div class="payment-image">
+                        <img src="images/payment/telebirr.webp" alt="telebirr logo" class="payment-method__img">
+                    </div>
+                </div>
+                <div class="CBE">
+                    <div class="payment-input">
+                        <label for="acc-num"><span class="visually-hidden">Label for the input</span></label>
+                        <input type="radio" id="CBE" name="payment-method" value="cbe" class="CBE__input"> 
+                        <label for="CBE">CBE</label>
+                        <input type="tel" name="account number" id="acc-num" placeholder="your acount number" class="CBE__input">
+                        <div class="error"></div>
+                    </div> 
+                    
+                    <div class="payment-image">
+                        <img src="images/payment/CBE.jpg" alt="Comercial bank of Ethiopia logo" class="payment-method__img">
+                    </div>
+                </div>
+                <div class="payment-method__form__button-container">
+                    <button class="btn payment-method__form__button" id="pay-btn">Pay</button>
+                    <a href="cart.html"><button type="button"   class="btn payment-method__form__button" id="cancel-btn">Cancel</button></a>
+                </div>
+
+            </form>
+            
+
+        </div> 
+        <div class="summary">
+            <table class="summary__table">
+                <thead>
+                    <tr>
+                        <td>Summary</td>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>addidas Air Force</td>
+                        
+                    </tr>
+                    <tr>
+                        <td>Nike</td>
+                    </tr>
+                    <tr>
+                        <td>Subtotal</td>
+                        <td>$45</td>
+                        
+                    </tr>
+                    <tr>
+                        <td>Shipping:</td>
+                        <td><strong>Free</strong></td>
+                    </tr>
+                    <tr>
+                        <td>Taxes:</td>
+                        <td><strong>$5</strong></td>
+                    </tr>
+                    <tr>
+                        <td>Total:</td>
+                        <td><strong>$50</strong></td>
+                    </tr>
+                </tbody>
+            </table>
+
+        </div>
+
+    </section>
+
+    <footer>
+        <div class="container-contact">
+           <img src="images/logo/logo.jpeg" alt="logo of the company" class="logo-container__image">
+        
+            <h4 class="container-contact__heading">Contact</h4>
+            <p><strong>Address:</strong>piassa, Addis Ababa</p>
+            <p><strong>Phone:</strong>+251 980 205 060 80</p>
+            <p><strong>Hours:</strong>6:00AM - 9:00PM </p>
+        </div>
+
+       
+        <div class="footer-container">
+           
+            <nav>
+                <ul class="navigation-bar">
+                    <li class="navigation-bar__item"><a href="index.html" class="navigation-bar__item__link">Home</a></li>
+                    <li class="navigation-bar__item"><a href="shop.html" class="navigation-bar__item__link">Shop</a></li>
+                    <li class="navigation-bar__item"><a href="about.html" class="navigation-bar__item__link">About</a></li>
+                    <li class="navigation-bar__item"><a href="contact.html" class="navigation-bar__item__link">Contact</a></li>
+                </ul>
+            </nav>
+        
+            <div class="social-media">
+                <ul class="social-media-bar">
+                   
+
+                    <li class="social-media-bar__item"><a href="https://www.facebook.com/" target="_blank" aria-label="open facebook home page" class="social-media-bar__item__link"><i class="social-media-bar__icon fa-brands fa-facebook"></i></a></li>
+                    <li class="social-media-bar__item"><a href="https://twitter.com/home" target="_blank" aria-label="open twitter home page" class="social-media-bar__item__link"><i class="social-media-bar__icon fa-brands fa-twitter"></i></a></li>
+                    <li class="social-media-bar__item"><a href="https://telegram.org/" target="_blank" aria-label="open telegram chanel" class="social-media-bar__item__link"><i class="social-media-bar__icon fa-brands fa-telegram"></i></a></li>
+
+                </ul>
+                
+
+            </div>
+           
+        </div>
+        <div class="copyright"><i class="fa-solid fa-copyright"></i>2022 all rights reserved</div>
+    </footer>
+    
+    <script src="index.js"></script>
+    <script src="payment-form.js"></script>
+</body>
+</html>

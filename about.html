@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="about page of my shoe selling website">
+    <title>About</title>
+    
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="font-awesome/css/all.css">
+    <link rel="icon" href="images/logo/logo.jpeg">
+</head>
+<body>
+    <!-- header section with a nav bar and search bar  -->
+    <header class="header">
+  
+        <nav class="header__navigation">
+            <div class="logo-container">
+                <img src="images/logo/logo.jpeg" class="logo-container__image" alt="logo of the company">
+             </div>
+            <ul class="navigation-bar" id="nav-bar">
+                <li class="navigation-bar__item"><a href="index.html" class="navigation-bar__item__link">Home</a></li>
+                <li class="navigation-bar__item"><a href="shop.html" class="navigation-bar__item__link">Shop</a></li>
+                <li class="navigation-bar__item"><a href="about.html" class="navigation-bar__item__link navigation-bar__item__link--active">About</a></li>
+                <li class="navigation-bar__item"><a href="contact.html" class="navigation-bar__item__link">Contact</a></li>
+                <li class="navigation-bar__item cart-icon"><a href="cart.html" aria-label="open cart page" class="navigation-bar__item__link"><i class="fa-solid fa-cart-shopping"></i></a></li>
+                <li class="navigation-bar__item"><a href="login.html" class="navigation-bar__item__link"><button class="btn" id="login-btn">login</button></a></li>
+                <a href="#" class="close" id="close" aria-label="close sidebar menu"><i class="fa-solid fa-xmark"></i></a>
+            
+            </ul>
+        
+            <div class="mobile">
+                <button class="mobile__search-button" id="search-button-mobile" aria-label="search button"><i class="mobile__search-button__icon fa-solid fa-magnifying-glass"></i> </button>
+               
+                
+                <a href="cart.html" aria-label="open cartpage"><i class="mobile__cart fa-solid fa-cart-shopping"></i></a>
+                <i id="bar" class="mobile__hamburger-menu fas fa-outdent"></i>
+            </div>
+        </nav>
+        <div class="search-bar" id="search-bar">
+            <form class="search-bar-form">
+                <label for="search"><span class="visually-hidden">Label for the input</span></label>
+                <input type="text" placeholder="search anything..." id="search"  class="search-bar-form__input">
+                
+                <button id="search-btn" type="submit" aria-label="search button" class="search-bar-form__button"><i class="search-bar-form__button__icon fa-solid fa-magnifying-glass"></i></button>
+            </form>
+        </div>
+    </header>
+    <main>
+        <section class="about-company section-padding">
+            <div class="company-photo">
+                <h4 class="company-photo__heading">Headquarters</h4>
+                <img src="images/About/company.webp" alt="photo of the company" class="company-photo__img">
+            </div>
+            <div class="company-description" >
+                <h1 class="company-description__heading">About the company</h1>
+                <span class="company-description__span">Lorem ipsum dolor sit, 
+                    amet consectetur adipisicing elit. In ea optio deserunt deleniti nesciunt saepe, 
+                    nobis quae eligendi sint? Voluptatibus voluptates totam, 
+                    illum deleniti rerum sequi quaerat tempore facilis repellendus! <br><br>
+                    Lorem ipsum dolor sit, 
+                    amet consectetur adipisicing elit. In ea optio deserunt deleniti nesciunt saepe, 
+                    nobis quae eligendi sint? Voluptatibus voluptates totam, 
+                    illum deleniti rerum sequi quaerat tempore facilis repellendus!</span>
+                    
+                    <audio preload="auto" controls="controls"  preload="none">
+                        <source 
+                            src="audio/company-video.mp3" 
+                            type="audio/mp3">
+                    </audio> 
+            </div>
+        
+    
+        </section>
+    
+        <section class="about-company-CEO section-padding">
+            <video  src="video/company-video.mp4" type="video/mp4" alt="video about the comapny" controls class="about-company-CEO__video"></video>
+            <div class="image-CEO">
+                <div>
+                    <h3 class="image-CEO__heading">About the CEO</h3>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Atque,
+                        a quasi reprehenderit nulla consequatur saepe, 
+                        consectetur excepturi possimus adipisci expedita impedit illo ullam totam. 
+                        Debitis provident aliquid ut animi cumque!<br><br>
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Atque,
+                        a quasi reprehenderit nulla consequatur saepe, 
+                        consectetur excepturi possimus adipisci expedita impedit illo ullam totam. 
+                        Debitis provident aliquid ut animi cumque!
+                    </p>
+                </div>
+                <img src="images/About/CEO.jfif" alt="photo of the CEO of the company" class="image-CEO__img">
+            </div>
+    
+    
+        </section>
+
+    </main>
+   
+
+    <footer>
+        <div class="container-contact">
+           <img src="images/logo/logo.jpeg" alt="logo of the company" class="logo-container__image">
+        
+            <h4 class="container-contact__heading">Contact</h4>
+            <p><strong>Address:</strong>piassa, Addis Ababa</p>
+            <p><strong>Phone:</strong>+251 980 205 060 80</p>
+            <p><strong>Hours:</strong>6:00AM - 9:00PM </p>
+        </div>
+
+       
+        <div class="footer-container">
+           
+            <nav>
+                <ul class="navigation-bar">
+                    <li class="navigation-bar__item"><a href="index.html" class="navigation-bar__item__link">Home</a></li>
+                    <li class="navigation-bar__item"><a href="shop.html" class="navigation-bar__item__link">Shop</a></li>
+                    <li class="navigation-bar__item"><a href="about.html" class="navigation-bar__item__link navigation-bar__item__link--active">About</a></li>
+                    <li class="navigation-bar__item"><a href="contact.html" class="navigation-bar__item__link">Contact</a></li>
+                </ul>
+            </nav>
+        
+            <div class="social-media">
+                <ul class="social-media-bar">
+                   
+
+                    <li class="social-media-bar__item"><a href="https://www.facebook.com/" target="_blank" aria-label="open facebook home page" class="social-media-bar__item__link"><i class="social-media-bar__icon fa-brands fa-facebook"></i></a></li>
+                    <li class="social-media-bar__item"><a href="https://twitter.com/home" target="_blank" aria-label="open twitter home page" class="social-media-bar__item__link"><i class="social-media-bar__icon fa-brands fa-twitter"></i></a></li>
+                    <li class="social-media-bar__item"><a href="https://telegram.org/" target="_blank" aria-label="open telegram chanel" class="social-media-bar__item__link"><i class="social-media-bar__icon fa-brands fa-telegram"></i></a></li>
+
+                </ul>
+                
+
+            </div>
+           
+        </div>
+        <div class="copyright"><i class="fa-solid fa-copyright"></i>2022 all rights reserved</div>
+    </footer>
+    
+    <script src="index.js"></script>
+</body>
+</html>

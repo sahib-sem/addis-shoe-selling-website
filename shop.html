@@ -1,0 +1,367 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="shop page of my shoe selling website">
+    <title>Shop</title>
+    <link rel="stylesheet" href="font-awesome/css/all.css">
+    <link rel="stylesheet" href="style.css">
+    <link rel="icon" href="images/logo/logo.jpeg">
+</head>
+<body>
+    <header class="header">
+  
+        <nav class="header__navigation">
+            <div class="logo-container">
+                <img src="images/logo/logo.jpeg" class="logo-container__image" alt="logo of the company">
+             </div>
+            <ul class="navigation-bar" id="nav-bar">
+                <li class="navigation-bar__item"><a href="index.html" class="navigation-bar__item__link">Home</a></li>
+                <li class="navigation-bar__item"><a href="shop.html" class="navigation-bar__item__link navigation-bar__item__link--active">Shop</a></li>
+                <li class="navigation-bar__item"><a href="about.html" class="navigation-bar__item__link">About</a></li>
+                <li class="navigation-bar__item"><a href="contact.html" class="navigation-bar__item__link">Contact</a></li>
+                <li class="navigation-bar__item cart-icon"><a href="cart.html" aria-label="open cart page" class="navigation-bar__item__link"><i class="fa-solid fa-cart-shopping"></i></a></li>
+                <li class="navigation-bar__item"><a href="login.html" class="navigation-bar__item__link"><button class="btn" id="login-btn">login</button></a></li>
+                <a href="#" class="close" id="close" aria-label="close sidebar menu"><i class="fa-solid fa-xmark"></i></a>
+            
+            </ul>
+        
+            <div class="mobile">
+                <button class="mobile__search-button" id="search-button-mobile" aria-label="search button"><i class="mobile__search-button__icon fa-solid fa-magnifying-glass"></i> </button>
+               
+                
+                <a href="cart.html" aria-label="open cartpage"><i class="mobile__cart fa-solid fa-cart-shopping"></i></a>
+                <i id="bar" class="mobile__hamburger-menu fas fa-outdent"></i>
+            </div>
+        </nav>
+        <div class="search-bar" id="search-bar">
+            <form class="search-bar-form">
+                <label for="search"><span class="visually-hidden">Label for the input</span></label>
+                <input type="text" placeholder="search anything..." id="search"  class="search-bar-form__input">
+                
+                <button id="search-btn" type="submit" aria-label="search button" class="search-bar-form__button"><i class="search-bar-form__button__icon fa-solid fa-magnifying-glass"></i></button>
+            </form>
+        </div>
+    </header>
+    <main>
+        <section class="featured-catagories section-padding">
+            <h2 class="featured-catagories__heading2">Here are our main catagories</h2>
+            <div class="product-catagory-container">
+                <div class="product-catagory">
+                    <img src="images/catagories/addidas.webp" alt="photo addidas shoe catagory" class="product-catagory__img">
+                    <div class="product-catagory-description">
+                        <h3 class="product-catagory-description__heading3"><span class="product-catagory-description__span">catagory</span>: Addids</h3>
+                        <p class="product-catagory-description__paragraph"> new and fashionable addidas shoes</p>
+                    </div>
+                    <button class="catagory-shop-btn btn">Shop</button>
+                    
+                </div>
+                <div class="product-catagory">
+                    <img src="images/catagories/rebook.jpg" alt="photo rebook shoe catagor" class="product-catagory__img">
+                    <div class="product-catagory-description">
+                        <h3 class="product-catagory-description__heading3"><span class="product-catagory-description__span">catagory</span>: Rebook</h3>
+                        <p>new and fashionable rebook shoes</p>
+                    </div>
+                    <button class="catagory-shop-btn btn">Shop</button>
+                    
+                </div>
+                <div class="product-catagory">
+                    <img src="images/catagories/nike.webp" alt="photo nike shoe catagory" class="product-catagory__img">
+                    <div class="product-catagory-description">
+                        <h3 class="product-catagory-description__heading3"><span class="product-catagory-description__span">catagory</span>: Nike</h3>
+                        <p>new and fashionable nike shoes</p>
+                    </div>
+                    <button class="catagory-shop-btn btn">Shop</button>
+                    
+                </div>
+                <div class="product-catagory">
+                    <img src="images/catagories/puma.webp" alt="photo puma shoe catagory" class="product-catagory__img">
+                    <div class="product-catagory-description">
+                        <h3 class="product-catagory-description__heading3"><span class="product-catagory-description__span">catagory</span>: Puma</h3>
+                        <p>new and fashionable puma shoes</p>
+                    </div>
+                    <button class="catagory-shop-btn btn">Shop</button>
+                    
+                </div>
+            </div>
+    
+        </section>
+        <section class="featured section-padding" >
+            <h2>Featured Products</h2>
+            <p>Trending shoes</p>
+            <div class="product-container">
+                <div class="featured-product">
+                    <img src="images/products/product1.webp" alt="product image 1" class="featured-product__image">
+                    <div class="featured-product-description">
+                        <span class="featured-product-description__span">addidas</span>
+                        <h5 class="featured-product-description__heading5">New Addidas Brand Shoe</h5>
+                        <div class="star">
+                            <i class="star__icon fas fa-star"></i>
+                            <i class="star__icon fas fa-star"></i>
+                            <i class="star__icon fas fa-star"></i>
+                            <i class="star__icon fas fa-star"></i>
+                            <i class="star__icon fas fa-star"></i>
+                        </div>
+                        <h4 class="featured-product-description__heading4">$20</h4>
+                    </div>
+                    <a href="cart.html" aria-label="add to cart"><i class="fa-sharp fa-solid fa-cart-plus featured-product__cart">
+                        <span class="visually-hidden">Label for the input</span></i></a>
+                </div>
+                <div class="featured-product">
+                    <img src="images/products/product2.webp" alt="product image 2" class="featured-product__image">
+                    <div class="featured-product-description">
+                        <span class="featured-product-description__span">addidas</span>
+                        <h5 class="featured-product-description__heading5">New Addidas Brand Shoe</h5>
+                        <div class="star">
+                            <i class="star__icon fas fa-star"></i>
+                            <i class="star__icon fas fa-star"></i>
+                            <i class="star__icon fas fa-star"></i>
+                            <i class="star__icon fas fa-star"></i>
+                            <i class="star__icon fas fa-star"></i>
+                        </div>
+                        <h4 class="featured-product-description__heading4">$20</h4>
+                    </div>
+                    <a href="cart.html" aria-label="add to cart"><i class="fa-sharp fa-solid fa-cart-plus featured-product__cart">
+                        <span class="visually-hidden">Label for the input</span>
+                    </i></a>
+                </div>
+                <div class="featured-product">
+                    <img src="images/products/product3.webp" alt="product image 3" class="featured-product__image">
+                    <div class="featured-product-description">
+                        <span class="featured-product-description__span">addidas</span>
+                        <h5 class="featured-product-description__heading5">New Addidas Brand Shoe</h5>
+                        <div class="star">
+                            <i class="star__icon fas fa-star"></i>
+                            <i class="star__icon fas fa-star"></i>
+                            <i class="star__icon fas fa-star"></i>
+                            <i class="star__icon fas fa-star"></i>
+                            <i class="star__icon fas fa-star"></i>
+                        </div>
+                        <h4 class="featured-product-description__heading4">$20</h4>
+                    </div>
+                    <a href="cart.html" aria-label="add to cart"><i class="fa-sharp fa-solid fa-cart-plus featured-product__cart"></i></a>
+                </div>
+                <div class="featured-product">
+                    <img src="images/products/product4.webp" alt="product image 4" class="featured-product__image">
+                    <div class="featured-product-description">
+                        <span class="featured-product-description__span">addidas</span>
+                        <h5 class="featured-product-description__heading5">New Addidas Brand Shoe</h5>
+                        <div class="star">
+                            <i class="star__icon fas fa-star"></i>
+                            <i class="star__icon fas fa-star"></i>
+                            <i class="star__icon fas fa-star"></i>
+                            <i class="star__icon fas fa-star"></i>
+                            <i class="star__icon fas fa-star"></i>
+                        </div>
+                        <h4 class="featured-product-description__heading4">$20</h4>
+                    </div>
+                    <a href="cart.html" aria-label="add to cart"><i class="fa-sharp fa-solid fa-cart-plus featured-product__cart"></i></a>
+                </div>
+                <div class="featured-product">
+                    <img src="images/products/product5.webp" alt="product image 5" class="featured-product__image">
+                    <div class="featured-product-description">
+                        <span class="featured-product-description__span">addidas</span>
+                        <h5 class="featured-product-description__heading5">New Addidas Brand Shoe</h5>
+                        <div class="star">
+                            <i class="star__icon fas fa-star"></i>
+                            <i class="star__icon fas fa-star"></i>
+                            <i class="star__icon fas fa-star"></i>
+                            <i class="star__icon fas fa-star"></i>
+                            <i class="star__icon fas fa-star"></i>
+                        </div>
+                        <h4 class="featured-product-description__heading4">$20</h4>
+                    </div>
+                    <a href="cart.html" aria-label="add to cart"><i class="fa-sharp fa-solid fa-cart-plus featured-product__cart"></i></a>
+                </div>
+                <div class="featured-product">
+                    <img src="images/products/product6.webp" alt="product image 6" class="featured-product__image">
+                    <div class="featured-product-description">
+                        <span class="featured-product-description__span">addidas</span>
+                        <h5 class="featured-product-description__heading5">New Addidas Brand Shoe</h5>
+                        <div class="star">
+                            <i class="star__icon fas fa-star"></i>
+                            <i class="star__icon fas fa-star"></i>
+                            <i class="star__icon fas fa-star"></i>
+                            <i class="star__icon fas fa-star"></i>
+                            <i class="star__icon fas fa-star"></i>
+                        </div>
+                        <h4 class="featured-product-description__heading4">$20</h4>
+                    </div>
+                    <a href="cart.html" aria-label="add to cart"><i class="fa-sharp fa-solid fa-cart-plus featured-product__cart"></i></a>
+                </div>
+                <div class="featured-product">
+                    <img src="images/products/product7.webp" alt="product image 7" class="featured-product__image">
+                    <div class="featured-product-description">
+                        <span class="featured-product-description__span">addidas</span>
+                        <h5 class="featured-product-description__heading5">New Addidas Brand Shoe</h5>
+                        <div class="star">
+                            <i class="star__icon fas fa-star"></i>
+                            <i class="star__icon fas fa-star"></i>
+                            <i class="star__icon fas fa-star"></i>
+                            <i class="star__icon fas fa-star"></i>
+                            <i class="star__icon fas fa-star"></i>
+                        </div>
+                        <h4 class="featured-product-description__heading4">$20</h4>
+                    </div>
+                    <a href="cart.html" aria-label="add to cart"><i class="fa-sharp fa-solid fa-cart-plus featured-product__cart"></i></a>
+                </div>
+                <div class="featured-product">
+                    <img src="images/products/product8.webp" alt="product image 8" class="featured-product__image">
+                    <div class="featured-product-description">
+                        <span class="featured-product-description__span">addidas</span>
+                        <h5 class="featured-product-description__heading5">New Addidas Brand Shoe</h5>
+                        <div class="star">
+                            <i class="star__icon fas fa-star"></i>
+                            <i class="star__icon fas fa-star"></i>
+                            <i class="star__icon fas fa-star"></i>
+                            <i class="star__icon fas fa-star"></i>
+                            <i class="star__icon fas fa-star"></i>
+                        </div>
+                        <h4 class="featured-product-description__heading4">$20</h4>
+                    </div>
+                    <a href="cart.html" aria-label="add to cart"><i class="fa-sharp fa-solid fa-cart-plus featured-product__cart"></i></a>
+                </div>
+            </div>
+            <div class="shop-now">
+                <h3 class="shop-now__heading">And many more shoes</h3>
+                <a href="#" aria-label="open shop page"><button class="btn" id="shop-now-btn">Shop now</button></a> 
+            </div>
+        </section>
+
+        <section class="product-details section-padding">  
+            <div class="sinle-product-image">
+                <img src="images/single-product/shoe1.webp" alt="selected product photo 1" width="100%" id="main-img">
+                <div class="small-img-group">
+                    <div class="small-img-col">
+                        <img src="images/single-product/shoe1.webp" alt="selected product photo 1" width="100%" class="small-img">
+                    </div>
+                    <div class="small-img-col">
+                        <img src="images/single-product/shoe2.webp" alt="selected product photo 2" width="100%" class="small-img">
+                    </div>
+                    <div class="small-img-col">
+                        <img src="images/single-product/shoe3.webp" alt="selected product photo 3" width="100%" class="small-img">
+                    </div>
+                    <div class="small-img-col">
+                        <img src="images/single-product/shoe4.webp" alt="selected product photo 4" width="100%" class="small-img">
+                    </div>
+                </div>
+    
+            </div>
+            <div class="single-product-details">
+                <h4 class="single-product-details__heading4">Addidas Air Force</h4>
+                <div>
+                     <div class="star">
+                            <i class="star__icon fas fa-star"></i>
+                            <i class="star__icon fas fa-star"></i>
+                            <i class="star__icon fas fa-star"></i>
+                            <i class="star__icon fas fa-star"></i>
+                            <i class="star__icon fas fa-star"></i>
+                        </div>
+                    <h4>$20</h4>
+                </div>
+                <select class="single-product-details__select">
+                    <option>Select size</option>
+                    <option>XXL</option>
+                    <option>XL</option>
+                    <option>Large</option>
+                    <option>Medium</option>
+                    <option>small</option>
+                </select>
+                <label for="quantity"><span class="visually-hidden">Label for the input</span></label>
+                <input type="number" value="1" id="quantity" class="single-product-details__input">
+                <h4>Product details</h4>
+                <span class="single-product-details__span">Debuting in 1982 as a basketball must-have, the Air Force 1 came into its own in the '90s. 
+                    The clean look of the classic white-on-white AF1 was endorsed from the basketball courts to 
+                    the block and beyond. Finding its rhythm in hip-hop culture, releasing limited collabs and colorways, 
+                    Air Force 1 became an iconic sneaker around the globe. And with over 2000 iterations of this staple, 
+                    its impact on fashion, music and sneaker culture can’t be denied.</span>
+                <div class="single-product-details__buttons">
+                    <button class="btn" id="review-btn">reviews</button>
+                    <button class="btn" id="add-cart-btn">Add to cart</button>
+                </div>
+                <div class="product-reviews" id="product-review">
+                    <div class="review">
+                        <div class="profile">
+                            <div> 
+                                <i class="fa-solid fa-user"></i>
+                                <strong>user1</strong>
+                            </div>
+                        
+                            <div class="star">
+                                <i class="star__icon fas fa-star"></i>
+                                <i class="star__icon fas fa-star"></i>
+                                <i class="star__icon fas fa-star"></i>
+                                <i class="star__icon fas fa-star"></i>
+                                <i class="star__icon fas fa-star"></i>
+                            </div>
+                        </div>
+                        <p>I can't get enough of this is the best shoe ever</p>
+                    </div>
+                    <div class="review">
+                        <div class="profile">
+                            <div> 
+                                <i class="fa-solid fa-user"></i>
+                                <strong>user2</strong>
+                            </div>
+                        
+                            <div class="star">
+                                <i class="star__icon fas fa-star"></i>
+                                <i class="star__icon fas fa-star"></i>
+                                <i class="star__icon fas fa-star"></i>
+                                <i class="star__icon fas fa-star"></i>
+                                <i class="star__icon fas fa-star"></i>
+                            </div>
+                        </div>
+                        <p>I can't get enough of this is the best shoe ever</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+    </main>
+    
+    <footer>
+        <div class="container-contact">
+           <img src="images/logo/logo.jpeg" alt="logo of the company" class="logo-container__image">
+        
+            <h4 class="container-contact__heading">Contact</h4>
+            <p><strong>Address:</strong>piassa, Addis Ababa</p>
+            <p><strong>Phone:</strong>+251 980 205 060 80</p>
+            <p><strong>Hours:</strong>6:00AM - 9:00PM </p>
+        </div>
+
+       
+        <div class="footer-container">
+           
+            <nav>
+                <ul class="navigation-bar">
+                    <li class="navigation-bar__item"><a href="index.html" class="navigation-bar__item__link">Home</a></li>
+                    <li class="navigation-bar__item"><a href="shop.html" class="navigation-bar__item__link navigation-bar__item__link--active">Shop</a></li>
+                    <li class="navigation-bar__item"><a href="about.html" class="navigation-bar__item__link">About</a></li>
+                    <li class="navigation-bar__item"><a href="contact.html" class="navigation-bar__item__link">Contact</a></li>
+                </ul>
+            </nav>
+        
+            <div class="social-media">
+                <ul class="social-media-bar">
+                   
+
+                    <li class="social-media-bar__item"><a href="https://www.facebook.com/" target="_blank" aria-label="open facebook home page" class="social-media-bar__item__link"><i class="social-media-bar__icon fa-brands fa-facebook"></i></a></li>
+                    <li class="social-media-bar__item"><a href="https://twitter.com/home" target="_blank" aria-label="open twitter home page" class="social-media-bar__item__link"><i class="social-media-bar__icon fa-brands fa-twitter"></i></a></li>
+                    <li class="social-media-bar__item"><a href="https://telegram.org/" target="_blank" aria-label="open telegram chanel" class="social-media-bar__item__link"><i class="social-media-bar__icon fa-brands fa-telegram"></i></a></li>
+
+                </ul>
+                
+
+            </div>
+           
+        </div>
+        <div class="copyright"><i class="fa-solid fa-copyright"></i>2022 all rights reserved</div>
+    </footer>
+
+    
+    <script src="index.js"></script>
+</body>
+</html>

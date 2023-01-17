@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="contact page of my shoe selling website">
+    <title>Contact Us</title>
+    <link rel="stylesheet" href="font-awesome/css/all.css">
+    <link rel="stylesheet" href="style.css">
+    <link rel="icon" href="images/logo/logo.jpeg">
+</head>
+<body>
+    <!-- header section with a nav bar and search bar  -->
+    <header class="header">
+  
+        <nav class="header__navigation">
+            <div class="logo-container">
+                <img src="images/logo/logo.jpeg" class="logo-container__image" alt="logo of the company">
+             </div>
+            <ul class="navigation-bar" id="nav-bar">
+                <li class="navigation-bar__item"><a href="index.html" class="navigation-bar__item__link">Home</a></li>
+                <li class="navigation-bar__item"><a href="shop.html" class="navigation-bar__item__link">Shop</a></li>
+                <li class="navigation-bar__item"><a href="about.html" class="navigation-bar__item__link">About</a></li>
+                <li class="navigation-bar__item"><a href="contact.html" class="navigation-bar__item__link navigation-bar__item__link--active">Contact</a></li>
+                <li class="navigation-bar__item cart-icon"><a href="cart.html" aria-label="open cart page" class="navigation-bar__item__link"><i class="fa-solid fa-cart-shopping"></i></a></li>
+                <li class="navigation-bar__item"><a href="login.html" class="navigation-bar__item__link"><button class="btn" id="login-btn">login</button></a></li>
+                <a href="#" class="close" id="close" aria-label="close sidebar menu"><i class="fa-solid fa-xmark"></i></a>
+            
+            </ul>
+        
+            <div class="mobile">
+                <button class="mobile__search-button" id="search-button-mobile" aria-label="search button"><i class="mobile__search-button__icon fa-solid fa-magnifying-glass"></i> </button>
+               
+                
+                <a href="cart.html" aria-label="open cartpage"><i class="mobile__cart fa-solid fa-cart-shopping"></i></a>
+                <i id="bar" class="mobile__hamburger-menu fas fa-outdent"></i>
+            </div>
+        </nav>
+        <div class="search-bar" id="search-bar">
+            <form class="search-bar-form">
+                <label for="search"><span class="visually-hidden">Label for the input</span></label>
+                <input type="text" placeholder="search anything..." id="search"  class="search-bar-form__input">
+                
+                <button id="search-btn" type="submit" aria-label="search button" class="search-bar-form__button"><i class="search-bar-form__button__icon fa-solid fa-magnifying-glass"></i></button>
+            </form>
+        </div>
+    </header>
+    <main>
+        <section class="contact-banner">
+            <div class="contact-banner__banner">
+                <h1 class="contact-banner__heading1">#contact us</h1>
+                <h4>let's us know what you think</h4>
+            </div>
+    
+        </section>
+        <section>
+            <div class="contact-info">
+                <div class="location">
+                    <i class="contact-info__icon fa-solid fa-location-dot"></i>
+                    <strong>piassa, Addis Ababa</strong>
+                </div>
+                <div class="phone-num">
+                    <i class="contact-info__icon fa-solid fa-phone"></i>
+                    <strong>+251 9802 050 60</strong>
+                </div>
+                <div class="email">
+                    <i class="contact-info__icon fa-solid fa-envelope"></i>
+                    <strong>semahegnsahib@gmail.com</strong>
+                </div>
+            </div>
+            <form class="form-details" id="form">
+                <div class="inputs">
+                    <div class="input-control">
+                        <label for="full-name"><span class="visually-hidden">Label for the input</span></label>
+                        <input type="text" name="full-name" id="full-name" placeholder="full name...">
+                        <div class="error"></div>
+                    </div>
+
+                    <div class="input-control">
+                        <label for="email"><span class="visually-hidden">Label for the input</span></label>
+                        <input type="text" name="email" id="email" placeholder="email...">
+                        <div class="error"></div>
+                    </div>
+
+                    <div class="input-control">
+                        <label for="message"><span class="visually-hidden">Label for the input</span></label>
+                        <textarea name="message" id="message" id="message" cols="30" rows="10" placeholder="write your message"></textarea>
+                        <div class="error"></div>
+                    </div>
+                
+                    <button class="btn" id="send-btn"> send</button>
+                </div>
+                
+            </form>
+        </section>
+    
+
+    </main>
+    
+    <footer>
+        <div class="container-contact">
+           <img src="images/logo/logo.jpeg" alt="logo of the company" class="logo-container__image">
+        
+            <h4 class="container-contact__heading">Contact</h4>
+            <p><strong>Address:</strong>piassa, Addis Ababa</p>
+            <p><strong>Phone:</strong>+251 980 205 060 80</p>
+            <p><strong>Hours:</strong>6:00AM - 9:00PM </p>
+        </div>
+
+       
+        <div class="footer-container">
+           
+            <nav>
+                <ul class="navigation-bar">
+                    <li class="navigation-bar__item"><a href="index.html" class="navigation-bar__item__link">Home</a></li>
+                    <li class="navigation-bar__item"><a href="shop.html" class="navigation-bar__item__link">Shop</a></li>
+                    <li class="navigation-bar__item"><a href="about.html" class="navigation-bar__item__link">About</a></li>
+                    <li class="navigation-bar__item"><a href="contact.html" class="navigation-bar__item__link navigation-bar__item__link--active">Contact</a></li>
+                </ul>
+            </nav>
+        
+            <div class="social-media">
+                <ul class="social-media-bar">
+                   
+
+                    <li class="social-media-bar__item"><a href="https://www.facebook.com/" target="_blank" aria-label="open facebook home page" class="social-media-bar__item__link"><i class="social-media-bar__icon fa-brands fa-facebook"></i></a></li>
+                    <li class="social-media-bar__item"><a href="https://twitter.com/home" target="_blank" aria-label="open twitter home page" class="social-media-bar__item__link"><i class="social-media-bar__icon fa-brands fa-twitter"></i></a></li>
+                    <li class="social-media-bar__item"><a href="https://telegram.org/" target="_blank" aria-label="open telegram chanel" class="social-media-bar__item__link"><i class="social-media-bar__icon fa-brands fa-telegram"></i></a></li>
+
+                </ul>
+                
+
+            </div>
+           
+        </div>
+        <div class="copyright"><i class="fa-solid fa-copyright"></i>2022 all rights reserved</div>
+    </footer>
+
+
+    
+    <script src="index.js"></script>
+    <script src="contact-form.js" type="module"></script>
+</body>
+</html>
