@@ -1,0 +1,225 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="cart page of my shoe selling website">
+    <title>Cart</title>
+    <link rel="stylesheet" href="font-awesome/css/all.css">
+    <link rel="icon" href="images/logo/logo.jpeg">
+    <link rel="stylesheet" href="bootstrap-5.0.2-dist/bootstrap-5.0.2-dist/css/bootstrap.min.css">
+</head>
+<body>
+    <header >
+        <nav class="navbar navbar-expand-lg navbar-light bg-light" >
+            <div class="container-fluid">
+              
+                <a class="navbar-brand" href="index.html">
+                    <img src="images/logo/logo.jpeg" width="70" height="70" alt="logo image" class="border rounded-circle ms-2">
+                </a>
+
+                
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                        <li class="nav-item"><a class="nav-link" href="index.html" aria-current="page">Home<span class="sr-only">(current)</span></a></li>
+                        <li class="nav-item"><a class="nav-link" href="shop.html" >Shop</a></li>
+                        <li class="nav-item"><a class="nav-link" href="about.html">About</a></li>
+                        <li class="nav-item"><a class="nav-link" href="contact.html">Contact</a></li>
+                        <li class="nav-item"><a class="nav-link active" href="cart.html" aria-label="open cart page"><i class="fa-solid fa-cart-shopping"></i></a></li>
+                        <li class="nav-item"><a class="nav-link" href="login.html"><button class="btn btn-success">login</button></a></li>
+                    </ul>
+                    <form class="d-flex">
+                        <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+                        <button class="btn btn-outline-success" type="submit">Search</button>
+                    </form>
+                </div>
+                
+            </div>
+        </nav>
+    </header>
+
+    <main>
+        <section class="d-flex flex-wrap mt-4 p-3" style="gap: 4rem;">
+          <div class="table-responsive">
+              <table class="table w-auto" style="white-space:nowrap;">
+                <thead>
+                  <tr>
+                    <th scope="col">remove</th>
+                    <th scope="col">product</th>
+                    <th scope="col">Description</th>
+                    <th scope="col">Price</th>
+                    <th scope="col">Quantity</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <th scope="row">
+                      <span class="visually-hidden">text for table heading</span>
+                      <a href="#" aria-label="remove from cart">
+                        <i class="text-center far fa-times-circle"></i>
+                      </a>
+                    </th>
+                    <td>Addidas Air Force-1</td>
+                    <td>Lorem ipsum dolor sit amet
+                        </td>
+                    <td>$20</td>
+                    <td>
+                      <div class="form-outline" style="width:4rem;">
+                        <input type="number" id="typeNumber1" class="form-control" min="0">
+                        <label class="form-label" for="typeNumber1"><span class="visually-hidden">label for input</span></label>
+                      </div>
+                    </td>
+                  </tr>
+                  <tr>
+                    <th scope="row">
+                      <span class="visually-hidden">text for table heading</span>
+                      <a href="#" aria-label="remove from cart">
+                        <i class="text-center far fa-times-circle"></i>
+                      </a>
+                    </th>
+                    <td>Addidas Air Force-1</td>
+                    <td>Lorem ipsum dolor sit amet
+                        </td>
+                    <td>$20</td>
+                    <td>
+                      <div class="form-outline" style="width:4rem;">
+                        <input type="number" id="typeNumber2" class="form-control" min="0">
+                        <label class="form-label" for="typeNumber2"><span class="visually-hidden">label for input</span></label>
+                      </div>
+                    </td>
+                  </tr>
+                  <tr>
+                    <th scope="row"><strong>Total</strong></th>
+                    <td></td>
+                    <td></td>
+                    <td>$45</td>
+                    <td>2</td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+            
+            <div class="d-flex justify-content-between">
+                <div>
+                    <h4>Air Force 1</h4>
+                    <img src="images/products/product1.webp" alt="picture of shopping cart product" class="img-thumbnail mx-2" style="width: 200px; height: 200px;">
+                </div>
+                <div class="second-product">
+                    <h4>Samba Classic</h4>
+                    <img src="images/products/product2.webp" alt="picture of shopping cart product" class="img-thumbnail mx-2" style="width: 200px; height: 200px;">
+                    
+                </div>
+            </div>
+    
+        </section>
+        <section class="shipping-details section-padding">
+          <form class="mt-4 mx-auto needs-validation col-10 col-md-8 col-lg-8" novalidate id="form">
+            <div class="form-outline mb-sm-1 mb-md-2 mb-lg-3">
+                <input type="text" id="name" class="form-control" placeholder="full name" required>
+                <label class="form-label" for="name"><span class="visually-hidden">label for input</span></label>
+                <div class="invalid-feedback">
+                  Please provide your name.
+                </div>
+            </div>
+  
+            <div class="form-outline mb-sm-1 mb-md-2 mb-lg-3">
+              <input type="text" id="address" class="form-control" required placeholder="your Address"/>
+              <label class="form-label" for="address"><span class="visually-hidden">label for input</span></label>
+              <div class="invalid-feedback">
+                Please provide a valid address.
+              </div>
+            </div>
+            
+            <div class="form-outline mb-sm-1 mb-md-2 mb-lg-3">
+              <input type="text" id="city" class="form-control" required placeholder="your City"/>
+              <label class="form-label" for="city"><span class="visually-hidden">label for input</span></label>
+              <div class="invalid-feedback">
+                Please provide a valid city name.
+              </div>
+            </div>
+            <div class="form-outline mb-sm-1 mb-md-2 mb-lg-3">
+              <input type="tel" id="phone-number" class="form-control" pattern="^[\+]?[(]?[0-9]{3}[)]?[-\s\.]?[0-9]{3}[-\s\.]?[0-9]{4,6}$" required placeholder="your Phone Number"/>
+              <label class="form-label" for="phone-number"><span class="visually-hidden">label for input</span></label>
+              <div class="invalid-feedback">
+                Please provide a valid phone number.
+              </div>
+            </div>
+            <button class="btn btn-primary btn-block mb-sm-1 mb-md-2 mb-lg-3" id="next">Next</button>
+            <a href="index.html"><button type="button" class="btn btn-primary btn-block mb-sm-1 mb-md-2 mb-lg-3">Cancel</button></a>
+          </form>
+    
+        </section>
+
+       
+
+    </main>
+   
+    <footer class="bd-highlight mt-5 border pt-3">
+      <div class="container mx-6 ps-4">
+        <div class="row">
+          <div class="col-xl-3 col-lg-4 col-md-6 pt-6 d-flex align-items-center">
+              <img src="images/logo/logo.jpeg" width="80" height="80" alt="logo image" class="border rounded-circle" style="cursor: pointer;"></a>
+          </div>
+          <div class="col-xl-2 offset-xl-1 col-lg-2 col-md-6">
+            <div class="">
+              <h4>Quick Link</h4>
+              <ul class="list-unstyled">
+                <li>
+                  <a href="index.html" class="text-decoration-none">Home</a>
+                </li>
+                <li>
+                  <a href="about.html" class="text-decoration-none">About Us</a>
+                </li>
+                <li>
+                  <a href="shop.html" class="text-decoration-none">Shop</a>
+                </li>
+                <li>
+                  <a href="contact.html" class="text-decoration-none">Contact</a>
+                </li>
+              </ul>
+            </div>
+          </div>
+          <div class="col-xl-3 col-lg-3 col-md-6 mt-3">
+            <div>
+              <ul class="list-unstyled d-flex justify-content-evenly">
+                <li><a href="https://www.facebook.com/"  aria-label="facebook link"><i class="fs-2 social-media-bar__icon fa-brands fa-facebook"></i></a></li>
+                <li><a href="https://twitter.com/home"  aria-label="twitter link"><i class="fs-2 social-media-bar__icon fa-brands fa-twitter"></i></a></li>
+                <li><a href="https://telegram.org/"  aria-label="telegram link"><i class="fs-2 social-media-bar__icon fa-brands fa-telegram"></i></i></a></li>
+              </ul>
+            </div>
+          </div>
+          <div class="col-xl-3 col-lg-3 col-md-6">
+            <div>
+              <ul class="list-unstyled">
+                <li>
+                  <p class="d-flex justify-content-evenly"><strong>Address:</strong>Piassa, Addis Ababa</p>
+                </li>
+                <li>
+
+                  <p class="d-flex justify-content-evenly"><strong>Phone:</strong>+251 980 205 060 80</p>
+                </li>
+              
+                <li>
+                  <p class="d-flex justify-content-evenly"><strong>Hours:</strong> 6:00AM - 9:00PM  </p>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+        <div class="d-flex justify-content-center">
+    
+          <div class="copyright">
+            <p><i class="fa-solid fa-copyright"></i> 2022 all rights reserved</p>
+          </div>
+        </div>
+      </div>
+    </footer>
+    <script src="bootstrap-5.0.2-dist/bootstrap-5.0.2-dist/js/bootstrap.min.js"></script>
+    <script src="index.js"></script>
+</body>
+</html>

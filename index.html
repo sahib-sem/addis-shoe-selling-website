@@ -1,0 +1,304 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="home page of my shoe selling website">
+    <title>Home</title>
+    <link rel="stylesheet" href="bootstrap-5.0.2-dist/bootstrap-5.0.2-dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="font-awesome/css/all.css">
+    <link rel="icon" href="images/logo/logo.jpeg">
+</head>
+<body>
+    <header >
+        <nav class="navbar navbar-expand-lg navbar-light bg-light" >
+            <div class="container-fluid">
+              
+                <a class="navbar-brand" href="index.html">
+                    <img src="images/logo/logo.jpeg" width="70" height="70" alt="logo image" class="border rounded-circle">
+                </a>
+
+                
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                        <li class="nav-item"><a class="nav-link active" href="index.html" aria-current="page">Home<span class="sr-only">(current)</span></a></li>
+                        <li class="nav-item"><a class="nav-link" href="shop.html" >Shop</a></li>
+                        <li class="nav-item"><a class="nav-link" href="about.html">About</a></li>
+                        <li class="nav-item"><a class="nav-link" href="contact.html">Contact</a></li>
+                        <li class="nav-item"><a class="nav-link" href="cart.html" aria-label="open cart page"><i class="fa-solid fa-cart-shopping"></i></a></li>
+                        <li class="nav-item"><a class="nav-link" href="login.html"><button class="btn btn-success">login</button></a></li>
+                    </ul>
+                    <form class="d-flex">
+                        <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+                        <button class="btn btn-outline-success" type="submit">Search</button>
+                    </form>
+                </div>
+                
+            </div>
+        </nav>
+    </header>
+
+    <main>
+        <section>
+            <div id="carouselExampleCaptions" class="carousel slide" data-bs-ride="false">
+                <div class="carousel-indicators">
+                  <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+                  <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1" aria-label="Slide 2"></button>
+                  <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2" aria-label="Slide 3"></button>
+                </div>
+                <div class="carousel-inner">
+                  <div class="carousel-item active" style="height: 300px;">
+                    <img src="images/promotion/promo1.webp" class="h-100 d-block w-100 img-fluid" alt="image of promotion">
+                    <div class="carousel-caption d-none d-md-block">
+                      <h5 class="text-success">Big Discount</h5>
+                      <p class="text-primary">up tp 25%</p>
+                    </div>
+                  </div>
+                  <div class="carousel-item" style="height: 300px;">
+                    <img src="images/promotion/promo2.webp" class="h-100 d-block w-100 img-fluid" alt="image of promotion">
+                    <div class="carousel-caption d-none d-md-block">
+                    </div>
+                  </div>
+                  <div class="carousel-item" style="height: 300px;">
+                    <img src="images/promotion/promo3.png" class="h-100 d-block w-100 img-fluid" alt="image of promotion">
+                    <div class="carousel-caption d-none d-md-block">
+                    </div>
+                  </div>
+                </div>
+                <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="prev">
+                  <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                  <span class="visually-hidden">Previous</span>
+                </button>
+                <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="next">
+                  <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                  <span class="visually-hidden">Next</span>
+                </button>
+              </div>
+        </section>
+
+        <section>
+            <h2 class="text-center mt-2">Featured Products</h2>
+            <p class="text-center">Trending shoes</p>
+      
+            <div class="row row-cols-1 row-cols-md-4 g-4 p-4 m-0">
+                <div class="col">
+                  <div class="card h-100">
+                    <img src="images/products/product1.webp" class="h-75 card-img-top" alt="image of product 1">
+                    <div class="card-body">
+                        <div class="star">
+                            <i class="star__icon fas fa-star text-warning"></i>
+                            <i class="star__icon fas fa-star text-warning"></i>
+                            <i class="star__icon fas fa-star text-warning"></i>
+                            <i class="star__icon fas fa-star text-warning"></i>
+                            <i class="star__icon fas fa-star text-warning"></i>
+                        </div>
+                      <h5 class="card-title">addidas</h5>
+                      <p class="card-text">New Addidas Brand Shoe</p>
+                      <p>$20</p>
+                      <a href="cart.html" class="btn btn-primary">Add to cart</a>
+                    </div>
+                  </div>
+                </div>
+                <div class="col">
+                  <div class="card h-100">
+                    <img src="images/products/product2.webp" class="h-75 card-img-top" alt="image of product 2">
+                    <div class="card-body">
+                        <div class="star">
+                            <i class="star__icon fas fa-star text-warning"></i>
+                            <i class="star__icon fas fa-star text-warning"></i>
+                            <i class="star__icon fas fa-star text-warning"></i>
+                            <i class="star__icon fas fa-star text-warning"></i>
+                            <i class="star__icon fas fa-star text-warning"></i>
+                        </div>
+                        <h5 class="card-title">addidas</h5>
+                        <p class="card-text">New Addidas Brand Shoe</p>
+                        <p>$20</p>
+                        <a href="cart.html" class="btn btn-primary">Add to cart</a>
+                    </div>
+                  </div>
+                </div>
+                <div class="col">
+                  <div class="card h-100">
+                    <img src="images/products/product3.webp" class="h-75 card-img-top" alt="image of product 3">
+                    <div class="card-body">
+                        <div class="star">
+                            <i class="star__icon fas fa-star text-warning"></i>
+                            <i class="star__icon fas fa-star text-warning"></i>
+                            <i class="star__icon fas fa-star text-warning"></i>
+                            <i class="star__icon fas fa-star text-warning"></i>
+                            <i class="star__icon fas fa-star text-warning"></i>
+                        </div>
+                        <h5 class="card-title">addidas</h5>
+                        <p class="card-text">New Addidas Brand Shoe</p>
+                        <p>$20</p>
+                        <a href="cart.html" class="btn btn-primary">Add to cart</a>
+                    </div>
+                  </div>
+                </div>
+                <div class="col">
+                    <div class="card h-100">
+                      <img src="images/products/product4.webp" class="h-75 card-img-top" alt="image of product 4">
+                      <div class="card-body">
+                          <div class="star">
+                              <i class="star__icon fas fa-star text-warning"></i>
+                              <i class="star__icon fas fa-star text-warning"></i>
+                              <i class="star__icon fas fa-star text-warning"></i>
+                              <i class="star__icon fas fa-star text-warning"></i>
+                              <i class="star__icon fas fa-star text-warning"></i>
+                          </div>
+                          <h5 class="card-title">addidas</h5>
+                          <p class="card-text">New Addidas Brand Shoe</p>
+                          <p>$20</p>
+                          <a href="cart.html" class="btn btn-primary">Add to cart</a>
+                      </div>
+                    </div>
+                  </div>
+                <div class="col">
+                    <div class="card h-100">
+                      <img src="images/products/product5.webp" class="h-75 card-img-top" alt="image of product 5">
+                      <div class="card-body">
+                        <div class="star">
+                            <i class="star__icon fas fa-star text-warning"></i>
+                            <i class="star__icon fas fa-star text-warning"></i>
+                            <i class="star__icon fas fa-star text-warning"></i>
+                            <i class="star__icon fas fa-star text-warning"></i>
+                            <i class="star__icon fas fa-star text-warning"></i>
+                        </div>
+                        <h5 class="card-title">addidas</h5>
+                        <p class="card-text">New Addidas Brand Shoe</p>
+                        <p>$20</p>
+                        <a href="cart.html" class="btn btn-primary">Add to cart</a>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col">
+                    <div class="card h-100">
+                      <img src="images/products/product6.webp" class="h-75 card-img-top" alt="image of product 6">
+                      <div class="card-body">
+                        <div class="star">
+                            <i class="star__icon fas fa-star text-warning"></i>
+                            <i class="star__icon fas fa-star text-warning"></i>
+                            <i class="star__icon fas fa-star text-warning"></i>
+                            <i class="star__icon fas fa-star text-warning"></i>
+                            <i class="star__icon fas fa-star text-warning"></i>
+                        </div>
+                        <h5 class="card-title">addidas</h5>
+                        <p class="card-text">New Addidas Brand Shoe</p>
+                        <p>$20</p>
+                        <a href="cart.html" class="btn btn-primary">Add to cart</a>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col">
+                    <div class="card h-100">
+                      <img src="images/products/product7.webp" class="h-75 card-img-top" alt="image of product 7">
+                      <div class="card-body">
+                        <div class="star">
+                            <i class="star__icon fas fa-star text-warning"></i>
+                            <i class="star__icon fas fa-star text-warning"></i>
+                            <i class="star__icon fas fa-star text-warning"></i>
+                            <i class="star__icon fas fa-star text-warning"></i>
+                            <i class="star__icon fas fa-star text-warning"></i>
+                        </div>
+                        <h5 class="card-title">addidas</h5>
+                        <p class="card-text">New Addidas Brand Shoe</p>
+                        <p>$20</p>
+                        <a href="cart.html" class="btn btn-primary">Add to cart</a>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col">
+                    <div class="card h-100">
+                      <img src="images/products/product8.webp" class="h-75 card-img-top" alt="image of product 8">
+                      <div class="card-body">
+                        <div class="star">
+                            <i class="star__icon fas fa-star text-warning"></i>
+                            <i class="star__icon fas fa-star text-warning"></i>
+                            <i class="star__icon fas fa-star text-warning"></i>
+                            <i class="star__icon fas fa-star text-warning"></i>
+                            <i class="star__icon fas fa-star text-warning"></i>
+                        </div>
+                        <h5 class="card-title">addidas</h5>
+                        <p class="card-text">New Addidas Brand Shoe</p>
+                        <p>$20</p>
+                        <a href="cart.html" class="btn btn-primary">Add to cart</a>
+                      </div>
+                    </div>
+                  </div>
+              </div>
+
+              <div class="d-flex flex-column justify-content-center align-items-center">
+                <h3 class="text-success">And many more shoes</h3>
+                <a href="shop.html" aria-label="open shop page"><button class="btn btn-success">Shop now</button></a> 
+              </div>
+
+        </section>
+    </main>
+   
+    <footer class="bd-highlight mt-5 border pt-3">
+        <div class="container mx-6 ps-4">
+          <div class="row">
+            <div class="col-xl-3 col-lg-4 col-md-6 pt-6 d-flex align-items-center">
+                <img src="images/logo/logo.jpeg" width="80" height="80" alt="logo image" class="border rounded-circle" style="cursor: pointer;"></a>
+            </div>
+            <div class="col-xl-2 offset-xl-1 col-lg-2 col-md-6">
+              <div class="">
+                <h4>Quick Link</h4>
+                <ul class="list-unstyled">
+                  <li>
+                    <a href="index.html" class="text-decoration-none text-dark">Home</a>
+                  </li>
+                  <li>
+                    <a href="about.html" class="text-decoration-none">About Us</a>
+                  </li>
+                  <li>
+                    <a href="shop.html" class="text-decoration-none">Shop</a>
+                  </li>
+                  <li>
+                    <a href="contact.html" class="text-decoration-none">Contact</a>
+                  </li>
+                </ul>
+              </div>
+            </div>
+            <div class="col-xl-3 col-lg-3 col-md-6 mt-3">
+              <div>
+                <ul class="list-unstyled d-flex justify-content-evenly">
+                  <li><a href="https://www.facebook.com/"  aria-label="facebook link"><i class="fs-2 social-media-bar__icon fa-brands fa-facebook"></i></a></li>
+                  <li><a href="https://twitter.com/home"  aria-label="twitter link"><i class="fs-2 social-media-bar__icon fa-brands fa-twitter"></i></a></li>
+                  <li><a href="https://telegram.org/"  aria-label="telegram link"><i class="fs-2 social-media-bar__icon fa-brands fa-telegram"></i></i></a></li>
+                </ul>
+              </div>
+            </div>
+            <div class="col-xl-3 col-lg-3 col-md-6">
+              <div>
+                <ul class="list-unstyled">
+                  <li>
+                    <p class="d-flex justify-content-evenly"><strong>Address:</strong>Piassa, Addis Ababa</p>
+                  </li>
+                  <li>
+
+                    <p class="d-flex justify-content-evenly"><strong>Phone:</strong>+251 980 205 060 80</p>
+                  </li>
+                
+                  <li>
+                    <p class="d-flex justify-content-evenly"><strong>Hours:</strong> 6:00AM - 9:00PM  </p>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </div>
+          <div class="d-flex justify-content-center">
+      
+            <div class="copyright">
+              <p><i class="fa-solid fa-copyright"></i> 2022 all rights reserved</p>
+            </div>
+          </div>
+        </div>
+      </footer>
+    <script src="bootstrap-5.0.2-dist/bootstrap-5.0.2-dist/js/bootstrap.min.js"></script>
+</body>
+</html>

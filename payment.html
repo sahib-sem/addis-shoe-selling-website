@@ -1,0 +1,202 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="payment page of my shoe selling website">
+    <title>Payment</title>
+    <link rel="stylesheet" href="bootstrap-5.0.2-dist/bootstrap-5.0.2-dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="font-awesome/css/all.css">
+
+    <link rel="icon" href="images/logo/logo.jpeg">
+</head>
+<body>
+    <header >
+        <nav class="navbar navbar-expand-lg navbar-light bg-light" >
+            <div class="container-fluid">
+              
+                <a class="navbar-brand" href="index.html">
+                    <img src="images/logo/logo.jpeg" width="70" height="70" alt="logo image" class="border rounded-circle ms-2">
+                </a>
+
+                
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                        <li class="nav-item"><a class="nav-link" href="index.html" aria-current="page">Home<span class="sr-only">(current)</span></a></li>
+                        <li class="nav-item"><a class="nav-link" href="shop.html" >Shop</a></li>
+                        <li class="nav-item"><a class="nav-link" href="about.html">About</a></li>
+                        <li class="nav-item"><a class="nav-link" href="contact.html">Contact</a></li>
+                        <li class="nav-item"><a class="nav-link" href="cart.html" aria-label="open cart page"><i class="fa-solid fa-cart-shopping"></i></a></li>
+                        <li class="nav-item"><a class="nav-link" href="login.html"><button class="btn btn-success">login</button></a></li>
+                    </ul>
+                    <form class="d-flex">
+                        <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+                        <button class="btn btn-outline-success" type="submit">Search</button>
+                    </form>
+                </div>
+                
+            </div>
+        </nav>
+    </header>
+
+
+    <section class="p-2 d-flex flex-wrap justify-content-evenly">
+      <form class="needs-validation mt-4" novalidate>
+        <div class="card mb-3" style="max-width: 540px;">
+            <div class="row g-0">
+              <div class="col-md-8">
+                <div class="card-body mt-4">
+                    <div class="form-outline mb-sm-1 mb-md-2 mb-lg-3">
+                        <label for="telebirr">Telebirr</label>
+                        <input type="radio" name="payment-method" id="telebirr">
+                        <input type="tel" id="phone-number" class="form-control mt-2" pattern="^[\+]?[(]?[0-9]{3}[)]?[-\s\.]?[0-9]{3}[-\s\.]?[0-9]{4,6}$" required placeholder="your Phone Number"/>
+                        <label class="form-label" for="phone-number"><span class="visually-hidden">label for input</span></label>
+                        <div class="invalid-feedback">
+                          Please provid a valid phone num.
+                        </div>
+                    </div>
+                </div>
+              </div>
+              <div class="col-md-4">
+                <img src="images/payment/telebirr.webp" class="img-fluid rounded-start" alt="telebirr logo">
+              </div>
+            </div>
+          </div>
+          <div class="card mb-3" style="max-width: 540px;">
+            <div class="row g-0">
+              <div class="col-md-8">
+                <div class="card-body mt-4">
+                    <div class="form-outline mb-sm-1 mb-md-2 mb-lg-3">
+                        <label for="CBE">CBE</label>
+                        <input type="radio" name="payment-method" id="CBE">
+                        <input type="number" id="bank-acc" class="form-control mt-2" pattern=”^[0-9]{9,18}$”   OR regex=”^\d{9,18}$” required placeholder="your account number"/>
+                        <label class="form-label" for="bank-acc"><span class="visually-hidden">label for input</span></label>
+                        <div class="invalid-feedback">
+                          Please provid a valid account number.
+                        </div>
+                    </div>
+                </div>
+              </div>
+              <div class="col-md-4">
+                <img src="images/payment/CBE.jpg" class="img-fluid rounded-start" alt="CBE logo">
+              </div>
+            </div>
+        </div>
+        <div class="mt-3">
+            <button class="btn btn-success" id="pay-btn">Pay</button>
+            <a href="cart.html" class="btn btn-success">Cancel</a>
+        </div>
+
+      </form>
+      
+        <div class="col-sm-8 col-md-8 col-lg-5 mt-sm-5">
+            <table class="table">
+              <thead>
+                <tr>
+                  <th scope="col">Summary</th>
+                  <th scope="col"><span class="visually-hidden">label for input</span></th>
+                  
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td scope="row">addidas Air Force</td>
+                  <td></td>
+                </tr>
+                <tr>
+                  <th scope="row">Nike</th>
+                  <td></td>
+                  
+                </tr>
+                <tr>
+                  <th scope="row">Subtotal</th>
+                  <td>$45</td>
+                </tr>
+                <tr>
+                  <th scope="row">Shipping</th>
+                  <td>Free</td>
+                </tr>
+                <tr>
+                  <th scope="row">Taxes:</th>
+                  <td>$5</td>
+                </tr>
+                <tr>
+                  <th scope="row">Total:</th>
+                  <td>$50</td>
+                </tr>
+              </tbody>
+            </table>
+
+        </div>
+
+    </section>
+
+    <footer class="bd-highlight mt-5 border pt-3">
+      <div class="container mx-6 ps-4">
+        <div class="row">
+          <div class="col-xl-3 col-lg-4 col-md-6 pt-6 d-flex align-items-center">
+              <img src="images/logo/logo.jpeg" width="80" height="80" alt="logo image" class="border rounded-circle" style="cursor: pointer;"></a>
+          </div>
+          <div class="col-xl-2 offset-xl-1 col-lg-2 col-md-6">
+            <div class="">
+              <h4>Quick Link</h4>
+              <ul class="list-unstyled">
+                <li>
+                  <a href="index.html" class="text-decoration-none">Home</a>
+                </li>
+                <li>
+                  <a href="about.html" class="text-decoration-none">About Us</a>
+                </li>
+                <li>
+                  <a href="shop.html" class="text-decoration-none">Shop</a>
+                </li>
+                <li>
+                  <a href="contact.html" class="text-decoration-none">Contact</a>
+                </li>
+              </ul>
+            </div>
+          </div>
+          <div class="col-xl-3 col-lg-3 col-md-6 mt-3">
+            <div>
+              <ul class="list-unstyled d-flex justify-content-evenly">
+                <li><a href="https://www.facebook.com/"  aria-label="facebook link"><i class="fs-2 social-media-bar__icon fa-brands fa-facebook"></i></a></li>
+                <li><a href="https://twitter.com/home"  aria-label="twitter link"><i class="fs-2 social-media-bar__icon fa-brands fa-twitter"></i></a></li>
+                <li><a href="https://telegram.org/"  aria-label="telegram link"><i class="fs-2 social-media-bar__icon fa-brands fa-telegram"></i></i></a></li>
+              </ul>
+            </div>
+          </div>
+          <div class="col-xl-3 col-lg-3 col-md-6">
+            <div>
+              <ul class="list-unstyled">
+                <li>
+                  <p class="d-flex justify-content-evenly"><strong>Address:</strong>Piassa, Addis Ababa</p>
+                </li>
+                <li>
+
+                  <p class="d-flex justify-content-evenly"><strong>Phone:</strong>+251 980 205 060 80</p>
+                </li>
+              
+                <li>
+                  <p class="d-flex justify-content-evenly"><strong>Hours:</strong> 6:00AM - 9:00PM  </p>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+        <div class="d-flex justify-content-center">
+    
+          <div class="copyright">
+            <p><i class="fa-solid fa-copyright"></i> 2022 all rights reserved</p>
+          </div>
+        </div>
+      </div>
+    </footer>
+    <script src="bootstrap-5.0.2-dist/bootstrap-5.0.2-dist/js/bootstrap.min.js"></script>
+    <script src="index.js"></script>
+</body>
+</html>
