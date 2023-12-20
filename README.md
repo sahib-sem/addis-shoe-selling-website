@@ -1,4 +1,18 @@
-# UGR-2912-13
-I have used my own javascript file in addition to js provided by bootstrap for two reasons.
-    1. one is for a ecommerce gallery on the shop page of the website. for changing the main image of the gallery on click of the small images under it 
-    2. I have used js for form validation, I wanted to validate my forms when the user tries to submit 
+# Addis Shoe Selling Website
+
+This project, completed for the "Web Development and Design" course during my 3rd Year, offers two versions of the website, available in separate branches:
+
+## Project Description
+- **Branches:**
+  - **cssjs Branch:** Contains the Vanilla JavaScript version built with HTML, CSS, and vanilla JavaScript.
+  - **bootstrap Branch:** Hosts the Bootstrap version of the website.
+
+
+## Versions
+### Vanilla JavaScript (cssjs Branch)
+The vanilla JavaScript version showcases fundamental web development technologies including HTML, CSS, and JavaScript.
+
+### Bootstrap Version (bootstrap Branch)
+The Bootstrap version provides an alternative implementation with Bootstrap framework integration, enhancing design and responsiveness.
+
+<!-- Feel free to include specific setup instructions or any relevant project details here -->
